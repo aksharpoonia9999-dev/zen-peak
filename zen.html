@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZENPEAK CAPITAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/fav.webp" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        /* =========================
+     Spacing
+  ========================= */
+
+        --spacing-10: 10px;
+        --spacing-28: 28px;
+
+        /* =========================
+     Border Radius
+  ========================= */
+        --radius-1: 1.66px;
+        --radius-12: 12px;
+        --radius-14: 14px;
+        --radius-16: 16px;
+        --radius-17: 17px;
+        --radius-24: 24px;
+        --radius-31: 31px;
+        --radius-56: 56px;
+        --radius-127: 127px;
+
+        /* =========================
+     Colors - Light → Dark
+  ========================= */
+
+        --color-peach: rgba(223, 188, 166, 1);
+        --color-dark-peach: rgba(166, 130, 114, 1);
+        --color-light-peach: rgba(247, 243, 240, 1);
+        --color-dark: rgba(90, 86, 86, 1);
+        --color-light-black: rgba(51, 51, 51, 1)
+          --color-dark-blue: rgba(12, 15, 38, 1);
+        /* =========================
+     Fonts
+  ========================= */
+        --font-ubuntu: "Ubuntu", sans-serif;
+
+        /* =========================
+     Line Heights
+  ========================= */
+
+        --leading-26: 26px;
+        --leading-30: 30px;
+
+        --leading-99: 99%;
+        --leading-100: 100%;
+        --leading-110: 110%;
+        --leading-127: 127%;
+        --leading-128: 128%;
+        --leading-130: 130%;
+        --leading-150: 150%;
+        --leading-160: 160%;
+        --leading-180: 180%;
+        --leading-182: 182%;
+
+        /* =========================
+     Shadows
+  ========================= */
+
+        --shadow-card: 0px 4px 31.4px 0px rgba(218, 175, 149, 1);
+        --shadow-blue: 0px 4px 31.4px 0px rgba(87, 147, 233, 1);
+
+        --background-image-peach-gradient: linear-gradient(
+          180deg,
+          #dfbca6 10.47%,
+          #d8a98d 21.8%,
+          #e5c1aa 41.63%,
+          #e5c0a4 48.71%
+        );
+        --background-image-blue-gradient: linear-gradient(
+          180deg,
+          #5e65d4 -9.38%,
+          #5692e8 55.41%
+        );
+
+        --breakpoint-xs: 475px;
+        --breakpoint-sm: 374px;
+      }
+    </style>
+  </head>
+  <body class="font-ubuntu bg-light-peach">
+    <section class="min-h-fit bg-peach relative">
+      <div class="container max-w-[1140px] mx-auto w-full px-4 xs:px-[22px]">
+        <div
+          class="row w-full flex justify-center items-center flex-col pt-[57px] md:pt-[80px] lg:pt-[99px]"
+        >
+          <div class="logo max-w-[480px]">
+            <img
+              width="480"
+              height="99"
+              class="object-cover max-w-[240px] xs:max-w-[480px] w-full h-[44px] xs:h-auto"
+              src="assets/images/logo.webp"
+              alt="logo-with-text"
+            />
+          </div>
+          <h1
+            class="heading italic text-4xl sm:text-[clamp(43px,5.21vw,75px)] text-white text-center leading-130 mt-[41px] xs:mt-[28px] font-light"
+          >
+            Exploring
+            <span class="not-italic font-bold">Crypto and Primary</span> Market
+            Strategies
+          </h1>
+          <button
+            class="contact-btn group relative overflow-hidden max-w-[330px] xs:max-w-[201px] w-full border border-solid border-white rounded-127 py-[20px] xs:py-[25px] px-[50px] sm:mt-[40px] mt-[61px] cursor-pointer"
+          >
+            <span
+              class="absolute left-0 top-1/2 h-[300px] w-[300px] -translate-x-full -translate-y-1/2 rounded-full bg-white transition-transform duration-700 ease-out group-hover:translate-x-0"
+            ></span>
+
+            <span
+              class="relative z-10 font-medium text-white leading-100 text-xl text-nowrap transition-colors duration-700 group-hover:text-dark-peach"
+            >
+              Contact Us
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="image-div w-full">
+        <img
+          width="1504"
+          height="1108"
+          class="object-cover mt-[37px] xs:mt-0 w-full h-[clamp(340px,50.69vw,730px)]"
+          src="assets/images/mountian.webp"
+          alt="mountain"
+        />
+      </div>
+    </section>
+
+    <section class="min-h-fit bg-dark-peach px-4 sm:px-[20px]">
+      <div class="container max-w-[1140px] mx-auto w-full">
+        <div
+          class="row w-full pt-[72px] pb-[40px] md:pt-[80px] md:pb-[62px] flex flex-col md:flex-row gap-[28px] md:gap-[clamp(32px,5.21vw,75px)] items-center"
+        >
+          <div
+            class="left flex flex-col max-w-[594px] justify-center items-center md:items-start"
+          >
+            <button
+              class="contact-btn group relative overflow-hidden max-w-[110px] py-[5px] w-full border border-solid border-white rounded-31 cursor-pointer"
+            >
+              <span
+                class="absolute left-0 top-1/2 h-[40px] w-[130px] -translate-x-full -translate-y-1/2 rounded-full bg-white transition-transform duration-700 ease-out group-hover:translate-x-0"
+              ></span>
+
+              <span
+                class="relative z-10 font-medium text-white leading-100 text-lg text-nowrap transition-colors duration-700 group-hover:text-dark-peach"
+              >
+                Abou Us
+              </span>
+            </button>
+            <h1
+              class="heading mt-[10px] text-[clamp(36px,4.44vw,64px)] text-center md:text-left leading-130 text-white italic font-light"
+            >
+              Pioneering Crypto
+              <span class="not-italic font-bold">And Primary Market</span>
+              Ventures
+            </h1>
+            <p
+              class="para-1 opacity-70 text-center md:text-left mt-[30px] xs:mt-[15px] font-normal text-white text-base leading-150 max-w-[577px] capitalize"
+            >
+              ZenPeak Capital is a forward-thinking venture firm specializing in
+              innovative investments within the realms of cryptocurrency and
+              primary markets. With a keen eye on emerging trends and disruptive
+              technologies, we are dedicated to identifying and nurturing
+              high-potential opportunities that yield both financial returns and
+              transformative impact.
+            </p>
+            <p
+              class="para-2 opacity-70 text-center md:text-left mt-[17px] xs:mt-[10px] font-normal text-white text-base leading-150 max-w-[577px] capitalize"
+            >
+              At ZenPeak Capital, we harness strategic investment to fuel
+              positive change and drive growth. Focusing on established crypto
+              assets and emerging primary market ventures, our experienced team
+              crafts a diversified portfolio primed for long-term success.
+            </p>
+          </div>
+          <div class="right max-w-[471px]">
+            <img
+              width="471"
+              height="471"
+              class="object-cover w-[317px] xs:w-full"
+              src="assets/images/circle.webp"
+              alt="cricle-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-fit pt-[74px] md:pt-16 overflow-hidden">
+      <div class="logo-marquee w-full overflow-hidden">
+        <div class="scroll-logo flex gap-[56.67px] items-center w-max">
+          <div
+            class="img-card w-[215px] h-[85px] shrink-0 flex items-center justify-center"
+          >
+            <img
+              width="180"
+              height="40"
+              class="object-cover"
+              src="assets/images/bittorent.webp"
+              alt="bittorent"
+            />
+          </div>
+
+          <div
+            class="img-card w-[215px] h-[85px] shrink-0 flex items-center justify-center"
+          >
+            <img
+              width="170"
+              height="44"
+              class="object-cover"
+              src="assets/images/brand.webp"
+              alt="brand"
+            />
+          </div>
+
+          <div
+            class="img-card w-[215px] h-[85px] shrink-0 flex items-center justify-center"
+          >
+            <img
+              width="122"
+              height="48"
+              class="object-cover"
+              src="assets/images/classic.webp"
+              alt="classic"
+            />
+          </div>
+
+          <div
+            class="img-card w-[215px] h-[85px] shrink-0 flex items-center justify-center"
+          >
+            <img
+              width="174"
+              height="56"
+              class="object-cover"
+              src="assets/images/currency-wave.webp"
+              alt="currency-wave"
+            />
+          </div>
+
+          <div
+            class="img-card w-[215px] h-[85px] shrink-0 flex items-center justify-center"
+          >
+            <img
+              width="167"
+              height="63"
+              class="object-cover"
+              src="assets/images/modern-crypto.webp"
+              alt="modern-crypto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="min-h-fit bg-[url(assets/images/art.webp)] bg-center bg-no-repeat bg-contain w-full px-4 py-[60px] sm:px-[20px] sm:pt-[74px] sm:pb-[104px] lg:pt-[162px] lg:pb-[185px]"
+    >
+      <div class="container max-w-[1141.31px] w-full mx-auto">
+        <div class="row w-full">
+          <h1
+            class="heading max-w-[593px] leading-130 text-[clamp(36px,4.444vw,64px)] text-dark font-light capitalize italic"
+          >
+            meet
+            <span class="font-bold not-italic leading-130">with our</span> team
+          </h1>
+          <div class="overflow-hidden w-full">
+            <div
+              class="cards flex gap-7 transition-transform duration-500 ease-in-out"
+            >
+              <div
+                class="card max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative mt-[108px] max-lg:mt-0 overflow-hidden"
+              >
+                <img
+                  width="361"
+                  height="485"
+                  class="object-cover"
+                  src="assets/images/user-1.webp"
+                  alt="card-img"
+                />
+
+                <div
+                  class="show-bio flex items-center absolute top-3 left-3 gap-[13px] z-50"
+                >
+                  <button
+                    id="show-bio"
+                    class="show-btn size-[68px] rounded-1 cursor-pointer bg-dark-peach flex items-center justify-center duration-300 ease-in-out transition-all"
+                  >
+                    <svg
+                      width="49"
+                      height="49"
+                      viewBox="0 0 49 49"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="plus-vertical transition-all duration-300"
+                        d="M22.458 10.208H26.5413V38.7913H22.458V10.208Z"
+                        fill="white"
+                      />
+
+                      <path
+                        d="M10.208 22.458H38.7913V26.5413H10.208V22.458Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                  <h1
+                    class="text-bio font-medium text-base leading-100 text-white"
+                  >
+                    SHOW BIO
+                  </h1>
+                </div>
+
+                <div
+                  class="bio max-w-[361px] z-10 rounded absolute top-full opacity-0 invisible translate-y-5 transition-all duration-500 ease-in-out bg-dark-peach py-[103.87px] px-[35px]"
+                >
+                  <h1
+                    class="heading text-center font-medium text-white text-base leading-100"
+                  >
+                    BIO
+                  </h1>
+                  <p
+                    class="para capitalize text-center text-white font-normal mt-[21px] opacity-70 leading-150"
+                  >
+                    ZenPeak Capital is a forward-thinking venture firm
+                    specializing in innovative investments within the realms of
+                    cryptocurrency and primary markets. With a keen eye on
+                    emerging trends and disruptive technologies, we are
+                    dedicated to identifying and nurturing high-potential
+                    opportunities that yield both financial returns and
+                    transformative impact.
+                  </p>
+                </div>
+
+                <div class="person-info mt-5">
+                  <h1
+                    class="name text-dark-blue leading-100 text-base font-bold"
+                  >
+                    Jhone Doe
+                  </h1>
+                  <p
+                    class="profession opacity-70 text-dark-blue text-base leading-100 mt-[5px] font-normal"
+                  >
+                    Co-Founder and CEO
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative mt-11 max-lg:mt-0 overflow-hidden"
+              >
+                <img
+                  width="361"
+                  height="485"
+                  class="object-cover"
+                  src="assets/images/user-2.webp"
+                  alt="card-img"
+                />
+
+                <div
+                  class="show-bio flex items-center absolute top-3 left-3 gap-[13px] z-50"
+                >
+                  <button
+                    id="show-bio"
+                    class="show-btn size-[68px] rounded-1 cursor-pointer bg-dark-peach flex items-center justify-center duration-300 ease-in-out transition-all"
+                  >
+                    <svg
+                      width="49"
+                      height="49"
+                      viewBox="0 0 49 49"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="plus-vertical transition-all duration-300"
+                        d="M22.458 10.208H26.5413V38.7913H22.458V10.208Z"
+                        fill="white"
+                      />
+
+                      <path
+                        d="M10.208 22.458H38.7913V26.5413H10.208V22.458Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                  <h1
+                    class="text-bio font-medium text-base leading-100 text-white"
+                  >
+                    SHOW BIO
+                  </h1>
+                </div>
+                <div
+                  class="bio max-w-[361px] z-10 rounded absolute top-full opacity-0 invisible translate-y-5 transition-all duration-500 ease-in-out bg-dark-peach py-[103.87px] px-[35px]"
+                >
+                  <h1
+                    class="heading text-center font-medium text-white text-base leading-100"
+                  >
+                    BIO
+                  </h1>
+                  <p
+                    class="para capitalize text-center text-white font-normal mt-[21px] opacity-70 leading-150"
+                  >
+                    ZenPeak Capital is a forward-thinking venture firm
+                    specializing in innovative investments within the realms of
+                    cryptocurrency and primary markets. With a keen eye on
+                    emerging trends and disruptive technologies, we are
+                    dedicated to identifying and nurturing high-potential
+                    opportunities that yield both financial returns and
+                    transformative impact.
+                  </p>
+                </div>
+
+                <div class="person-info mt-5">
+                  <h1
+                    class="name text-dark-blue leading-100 text-base font-bold"
+                  >
+                    Jhone Doe
+                  </h1>
+                  <p
+                    class="profession opacity-70 text-dark-blue text-base leading-100 mt-[5px] font-normal"
+                  >
+                    Co-Founder and CEO
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative overflow-hidden"
+              >
+                <img
+                  width="361"
+                  height="485"
+                  class="object-cover"
+                  src="assets/images/user-3.webp"
+                  alt="card-img"
+                />
+                <div
+                  class="show-bio flex items-center absolute top-3 left-3 gap-[13px] z-50"
+                >
+                  <button
+                    id="show-bio"
+                    class="show-btn size-[68px] rounded-1 cursor-pointer bg-dark-peach flex items-center justify-center duration-300 ease-in-out transition-all"
+                  >
+                    <svg
+                      width="49"
+                      height="49"
+                      viewBox="0 0 49 49"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="plus-vertical transition-all duration-300"
+                        d="M22.458 10.208H26.5413V38.7913H22.458V10.208Z"
+                        fill="white"
+                      />
+
+                      <path
+                        d="M10.208 22.458H38.7913V26.5413H10.208V22.458Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                  <h1
+                    class="text-bio font-medium text-base leading-100 text-white"
+                  >
+                    SHOW BIO
+                  </h1>
+                </div>
+
+                <div
+                  class="bio max-w-[361px] z-10 rounded absolute top-full opacity-0 invisible translate-y-5 transition-all duration-500 ease-in-out bg-dark-peach py-[103.87px] px-[35px]"
+                >
+                  <h1
+                    class="heading text-center font-medium text-white text-base leading-100"
+                  >
+                    BIO
+                  </h1>
+                  <p
+                    class="para capitalize text-center text-white font-normal mt-[21px] opacity-70 leading-150"
+                  >
+                    ZenPeak Capital is a forward-thinking venture firm
+                    specializing in innovative investments within the realms of
+                    cryptocurrency and primary markets. With a keen eye on
+                    emerging trends and disruptive technologies, we are
+                    dedicated to identifying and nurturing high-potential
+                    opportunities that yield both financial returns and
+                    transformative impact.
+                  </p>
+                </div>
+
+                <div class="person-info mt-5">
+                  <h1
+                    class="name text-dark-blue leading-100 text-base font-bold"
+                  >
+                    Jhone Doe
+                  </h1>
+                  <p
+                    class="profession opacity-70 text-dark-blue text-base leading-100 mt-[5px] font-normal"
+                  >
+                    Co-Founder and CEO
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="navigation mt-[33px] lg:mt-0 flex gap-[38px] items-center justify-center lg:justify-normal relative"
+            >
+              <div
+                class="left-button lg:w-full max-w-[362px] justify-end flex cursor-pointer transition-opacity duration-300"
+                id="left-button"
+                onclick="moveLeft()"
+              >
+                <svg
+                  width="60"
+                  height="15"
+                  viewBox="0 0 60 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.292896 6.65715C-0.0976257 7.04767 -0.0976258 7.68084 0.292896 8.07136L6.65686 14.4353C7.04738 14.8258 7.68055 14.8258 8.07107 14.4353C8.4616 14.0448 8.4616 13.4116 8.07107 13.0211L2.41422 7.36425L8.07107 1.7074C8.4616 1.31687 8.4616 0.68371 8.07107 0.293185C7.68055 -0.097339 7.04738 -0.097339 6.65686 0.293185L0.292896 6.65715ZM60 6.36426L1 6.36425L1 8.36425L60 8.36426L60 6.36426Z"
+                    fill="#A68272"
+                  />
+                </svg>
+              </div>
+              <div
+                class="right-button lg:w-full flex justify-end lg:absolute lg:bottom-30 cursor-pointer transition-opacity duration-300"
+                id="right-button"
+                onclick="moveRight()"
+              >
+                <svg
+                  width="60"
+                  height="15"
+                  viewBox="0 0 60 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M59.7071 6.65715C60.0976 7.04767 60.0976 7.68084 59.7071 8.07136L53.3431 14.4353C52.9526 14.8258 52.3195 14.8258 51.9289 14.4353C51.5384 14.0448 51.5384 13.4116 51.9289 13.0211L57.5858 7.36425L51.9289 1.7074C51.5384 1.31687 51.5384 0.68371 51.9289 0.293185C52.3195 -0.097339 52.9526 -0.097339 53.3431 0.293185L59.7071 6.65715ZM-8.74228e-08 6.36426L59 6.36425L59 8.36425L8.74228e-08 8.36426L-8.74228e-08 6.36426Z"
+                    fill="#A68272"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-fit relative">
+      <div class="container max-w-[738px] mx-auto w-full px-4">
+        <div class="row w-full flex flex-col items-center justify-center">
+          <h1
+            class="heading capitalize text-[clamp(36px,4.44vw,64px)] font-bold text-dark leading-130 text-center"
+          >
+            Invest
+            <span class="italic font-light">cryptocurrency</span> Portfolio
+          </h1>
+          <div
+            class="accordions py-[21px] mt-11 flex pr-[27px] pl-[25px] flex-col gap-[21px] max-w-[636px] w-full rounded-17 border-[3px] border-solid border-dark-peach bg-peach"
+          >
+            <div
+              class="accordion active max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            >
+              <div
+                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+              >
+                <div class="accordion-logo shrink-0">
+                  <div
+                    class="box size-[38px] xs:size-[73px] bg-blue-gradient rounded-14 flex items-center justify-center shadow-blue"
+                  >
+                    <img
+                      width="48"
+                      height="49"
+                      class="w-[25px] h-[25px] xs:w-[48px] xs:h-[49px]"
+                      src="assets/images/money-hat.webp"
+                      alt="money"
+                    />
+                  </div>
+                </div>
+
+                <h2
+                  class="accordion-heading text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                >
+                  Money Magicians
+                </h2>
+              </div>
+
+              <div
+                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[70px] md:pl-[134px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                  >
+                    Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                    penatibus crasigula praesent dictum fames suscipit nam.
+                    Fermentum praesent vel adipiscing eget dictum. Risus id
+                    tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            >
+              <div
+                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+              >
+                <div class="accordion-logo shrink-0">
+                  <div class="box flex items-center justify-center">
+                    <img
+                      width="44"
+                      height="48"
+                      class="w-[23px] h-[25px] xs:w-[44px] xs:h-[48px]"
+                      src="assets/images/fortune.webp"
+                      alt="fortune"
+                    />
+                  </div>
+                </div>
+
+                <h2
+                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                >
+                  Fortune Finders
+                </h2>
+              </div>
+
+              <div
+                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[105px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                  >
+                    Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                    penatibus crasigula praesent dictum fames suscipit nam.
+                    Fermentum praesent vel adipiscing eget dictum. Risus id
+                    tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            >
+              <div
+                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+              >
+                <div class="accordion-logo shrink-0">
+                  <div class="box flex items-center justify-center">
+                    <img
+                      width="50"
+                      height="50"
+                      class="w-[26px] h-[26px] xs:w-[50px] xs:h-[50px]"
+                      src="assets/images/investment.webp"
+                      alt="investment"
+                    />
+                  </div>
+                </div>
+
+                <h2
+                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                >
+                  Investment Innovators
+                </h2>
+              </div>
+
+              <div
+                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[110px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                  >
+                    Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                    penatibus crasigula praesent dictum fames suscipit nam.
+                    Fermentum praesent vel adipiscing eget dictum. Risus id
+                    tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            >
+              <div
+                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+              >
+                <div class="accordion-logo shrink-0">
+                  <div class="box flex items-center justify-center">
+                    <img
+                      width="50"
+                      height="50"
+                      class="w-[26px] h-[26px] xs:w-[50px] xs:h-[50px]"
+                      src="assets/images/profit.webp"
+                      alt="profit"
+                    />
+                  </div>
+                </div>
+
+                <h2
+                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                >
+                  Profit Prophets
+                </h2>
+              </div>
+
+              <div
+                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[110px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                  >
+                    Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                    penatibus crasigula praesent dictum fames suscipit nam.
+                    Fermentum praesent vel adipiscing eget dictum. Risus id
+                    tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            >
+              <div
+                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+              >
+                <div class="accordion-logo shrink-0">
+                  <div class="box flex items-center justify-center">
+                    <img
+                      width="50"
+                      height="50"
+                      class="w-[26px] h-[26px] xs:w-[50px] xs:h-[50px]"
+                      src="assets/images/risk.webp"
+                      alt="risk"
+                    />
+                  </div>
+                </div>
+
+                <h2
+                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                >
+                  Risk Reapers
+                </h2>
+              </div>
+
+              <div
+                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[110px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                  >
+                    Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                    penatibus crasigula praesent dictum fames suscipit nam.
+                    Fermentum praesent vel adipiscing eget dictum. Risus id
+                    tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            >
+              <div
+                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+              >
+                <div class="accordion-logo shrink-0">
+                  <div class="box flex items-center justify-center">
+                    <img
+                      width="57"
+                      height="50"
+                      class="w-[30px] h-[26px] xs:w-[57px] xs:h-[50px]"
+                      src="assets/images/kesolute.webp"
+                      alt="kesolute"
+                    />
+                  </div>
+                </div>
+
+                <h2
+                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                >
+                  Kesolute Investment Managers
+                </h2>
+              </div>
+
+              <div
+                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[120px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                  >
+                    Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                    penatibus crasigula praesent dictum fames suscipit nam.
+                    Fermentum praesent vel adipiscing eget dictum. Risus id
+                    tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-img absolute bg-[url(assets/images/art-2.webp)] bg-cover bg-center bg-no-repeat max-w-[1507px] w-full h-[clamp(600px,100vw,800px)] -z-10 bottom-0"
+      ></div>
+    </section>
+
+    <section class="min-h-fit">
+      <div class="container max-w-[1440px] w-full mx-auto">
+        <div
+          class="row w-full flex items-center pt-[60px] sm:pt-[97px] lg:pt-[218px]"
+        >
+          <img
+            width="148"
+            height="266"
+            src="assets/images/left-path.webp"
+            class="hidden lg:block"
+            alt="left-path"
+          />
+          <div
+            class="part max-w-[1144px] w-full bg-dark-peach rounded-16 pt-[35px] pb-[53px] px-[20px] lg:py-[45px] lg:pr-[5px] lg:pl-[26px]"
+          >
+            <div
+              class="part-content flex flex-col-reverse lg:flex-row items-center gap-[61px] xs:gap-[52px]"
+            >
+              <div class="left max-w-[486px] w-full">
+                <img
+                  width="486"
+                  height="500"
+                  class="object-cover w-full h-auto"
+                  src="assets/images/data.webp"
+                  alt="data"
+                />
+              </div>
+              <div class="right max-w-[540px] w-full">
+                <h1
+                  class="heading capitalize text-[clamp(36px,4.44vw,64px)] italic text-white font-light leading-130"
+                >
+                  Institutional
+                  <span class="font-bold not-italic">Asset Allocation in</span>
+                  Crypto
+                </h1>
+                <p
+                  class="para mt-[15px] capitalize text-white opacity-70 font-normal leading-150 text-base"
+                >
+                  Pulvinar scelerisque viverra at donec nunc orci ullam corper
+                  penatibus crasigula praesent dictum fames suscipit nam.
+                </p>
+                <div class="line-para flex gap-[15px] items-center mt-[25px]">
+                  <div
+                    class="line rounded-full min-w-[6px] h-[92px] bg-white"
+                  ></div>
+
+                  <div class="text">
+                    <h1
+                      class="heading font-bold leading-100 text-[clamp(16px,4.27vw,20px)] text-white opacity-80"
+                    >
+                      Consectetur sagittis
+                    </h1>
+                    <p
+                      class="para font-normal leading-150 text-base mt-[10px] text-white opacity-70"
+                    >
+                      Fermentum praesent vel adipiscing eget dictum. Risus id
+                      tellus mauris lorem ornare titor a neque nullam libero
+                      nunc eget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            width="148"
+            height="266"
+            class="object-cover hidden lg:block"
+            src="assets/images/right-path.webp"
+            alt="right-path"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-fit relative">
+      <div class="container max-w-[880px] w-full mx-auto px-4 sm:px-[20px]">
+        <div
+          class="row w-full pt-[60px] xs:pt-[97px] lg:pt-[139px] flex flex-col items-center"
+        >
+          <h1
+            class="heading max-w-[735px] text-center capitalize text-[clamp(36px,4.44vw,64px)] text-dark font-light leading-130 italic"
+          >
+            Let’s together
+            <span class="not-italic font-bold">make the crypto world</span>
+            great!
+          </h1>
+          <p
+            class="para text-center max-w-[675px] w-full capitalize mt-[15px] text-light-black opacity-70 font-normal leading-150 text-base"
+          >
+            Pretium id amet at iaculis sit orci enim. Fames in eget neque vitae
+            iaculis diam. Malesuada adipiscing integer tempor natoque accumsan
+            et.
+          </p>
+
+          <div
+            class="info-part mt-[70px] md:mt-[93px] max-w-[838px] lg:w-full border-[3px] border-solid rounded-17 border-transparent lg:border-dark-peach lg:bg-white lg:py-[38px] lg:px-[42px]"
+          >
+            <div class="cards-bottom flex flex-col gap-x-[25px] gap-y-[35px]">
+              <div class="top-cards flex flex-col lg:flex-row gap-[25px]">
+                <div
+                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
+                >
+                  <div
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      width="43"
+                      height="52"
+                      class="object-cover h-auto w-[clamp(39px,10.13vw,43px)]"
+                      src="assets/images/paper.webp"
+                      alt="paper"
+                    />
+                  </div>
+                  <div class="right">
+                    <h1
+                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
+                    >
+                      General inquiries
+                    </h1>
+                    <a
+                      href="mailto:General@gmail.com"
+                      class="mail opacity-70 font-normal text-base leading-150"
+                    >
+                      General@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
+                >
+                  <div
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      width="55"
+                      height="55"
+                      class="object-cover h-auto w-[clamp(46px,12.27vw,55px)]"
+                      src="assets/images/business.webp"
+                      alt="business"
+                    />
+                  </div>
+                  <div class="right">
+                    <h1
+                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
+                    >
+                      Investor relations
+                    </h1>
+                    <a
+                      href="mailto:invetorrelationsgmail.com"
+                      class="mail opacity-70 font-normal text-base leading-150"
+                    >
+                      Invetorrelationsgmail.Com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bottom-cards-two flex flex-col lg:flex-row gap-[25px]"
+              >
+                <div
+                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
+                >
+                  <div
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      width="52"
+                      height="52"
+                      class="object-cover h-auto w-[clamp(47px,12.53vw,52px)]"
+                      src="assets/images/rocket.webp"
+                      alt="rocket"
+                    />
+                  </div>
+                  <div class="right">
+                    <h1
+                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
+                    >
+                      Startup founders
+                    </h1>
+                    <a
+                      href="mailto:Startup@gmail.com"
+                      class="mail opacity-70 font-normal text-base leading-150"
+                    >
+                      Startup@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
+                >
+                  <div
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      width="54"
+                      height="54"
+                      class="object-cover h-auto w-[clamp(49px,13.07vw,54px)]"
+                      src="assets/images/rocket.webp"
+                      alt="rocket"
+                    />
+                  </div>
+                  <div class="right">
+                    <h1
+                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
+                    >
+                      Media and press
+                    </h1>
+                    <a
+                      href="mailto:Mediai@gmail.com"
+                      class="mail opacity-70 font-normal text-base leading-150"
+                    >
+                      Mediai@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-img absolute bg-[url(assets/images/art.webp)] bg-cover lg:bg-contain bg-center bg-no-repeat max-w-[1507px] w-full h-[500px] -z-10 bottom-0"
+      ></div>
+    </section>
+
+    <footer
+      class="min-h-fit bg-[url(assets/images/footer.webp)] bg-center bg-cover bg-no-repeat mt-[170px] pb-[18px]"
+    >
+      <div
+        class="footer-content mx-auto pt-[60px] max-w-[507px] w-full flex flex-col items-center justify-center"
+      >
+        <div class="logo max-w-[254px] w-full">
+          <a href=""
+            ><img
+              width="254"
+              height="61"
+              src="assets/images/logo.webp"
+              alt="logo"
+          /></a>
+        </div>
+        <p
+          class="para max-w-[313px] xs:max-w-[401px] w-full text-center mt-7 md:mt-4 text-white opacity-70 font-normal text-base leading-150"
+        >
+          Pulvinar scelerisque viverra at donec nunc orci ullam corper penatibus
+          crasigula.
+        </p>
+
+        <div
+          class="links flex flex-wrap items-center justify-center gap-x-5 gap-y-[17px] mt-[34px] md:mt-[25px]"
+        >
+          <div class="item text-white font-normal leading-150 text-base">
+            <a
+              href=""
+              class="relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+            >
+              Home
+            </a>
+          </div>
+          <div class="item text-white font-normal leading-150 text-base">
+            <a
+              href=""
+              class="relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+            >
+              About us
+            </a>
+          </div>
+          <div class="item text-white font-normal leading-150 text-base">
+            <a
+              href=""
+              class="relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+            >
+              Team
+            </a>
+          </div>
+          <div class="item text-white font-normal leading-150 text-base">
+            <a
+              href=""
+              class="relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+            >
+              Portfolio
+            </a>
+          </div>
+          <div class="item text-white font-normal leading-150 text-base">
+            <a
+              href=""
+              class="relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+            >
+              Fund Allocation
+            </a>
+          </div>
+          <div class="item text-white font-normal leading-150 text-base">
+            <a
+              href=""
+              class="relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+
+        <div class="socials flex gap-[11px] mt-[50px] md:mt-[25px]">
+          <div
+            class="medium transition-all duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a target="_blank" href="https://medium.com/">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <foreignObject x="-60.3" y="-60.3" width="160.6" height="160.6"
+                  ><div
+                    xmlns="http://www.w3.org/1999/xhtml"
+                    style="
+                      backdrop-filter: blur(30.15px);
+                      clip-path: url(#bgblur_0_87690_2006_clip_path);
+                      height: 100%;
+                      width: 100%;
+                    "
+                  ></div
+                ></foreignObject>
+                <g data-figma-bg-blur-radius="60.3">
+                  <rect width="40" height="40" rx="20" fill="#4766F9" />
+                  <rect width="40" height="40" rx="20" fill="#A68272" />
+                  <path
+                    d="M12.7933 15.5587C12.8045 15.4444 12.7888 15.329 12.7475 15.2218C12.7061 15.1145 12.6403 15.0185 12.5552 14.9412L10.7933 12.8162V12.5H16.2696L20.5039 21.785L24.2264 12.5H29.4489V12.8162L27.9414 14.2619C27.8777 14.3103 27.8284 14.3751 27.7987 14.4494C27.7691 14.5238 27.7603 14.6048 27.7733 14.6837V25.3087C27.7603 25.3877 27.7691 25.4687 27.7987 25.5431C27.8284 25.6174 27.8777 25.6822 27.9414 25.7306L29.4139 27.1762V27.4925H22.0039V27.1762L23.5314 25.6956C23.6802 25.5469 23.6802 25.5 23.6802 25.2737V16.6875L19.4339 27.465H18.8596L13.9221 16.6875V23.91C13.8789 24.2144 13.9808 24.5194 14.1958 24.7381L16.1802 27.1444V27.4606H10.5552V27.1481L12.5396 24.7381C12.7502 24.5194 12.8483 24.2106 12.7933 23.91V15.5587Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath
+                    id="bgblur_0_87690_2006_clip_path"
+                    transform="translate(60.3 60.3)"
+                  >
+                    <rect width="40" height="40" rx="20" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="telegram transition-all duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a target="_blank" href="https://web.telegram.org/a/"
+              ><svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <foreignObject x="-60.3" y="-60.3" width="160.6" height="160.6"
+                  ><div
+                    xmlns="http://www.w3.org/1999/xhtml"
+                    style="
+                      backdrop-filter: blur(30.15px);
+                      clip-path: url(#bgblur_0_87690_2009_clip_path);
+                      height: 100%;
+                      width: 100%;
+                    "
+                  ></div
+                ></foreignObject>
+                <g data-figma-bg-blur-radius="60.3">
+                  <rect width="40" height="40" rx="20" fill="#4766F9" />
+                  <rect width="40" height="40" rx="20" fill="#A68272" />
+                  <g clip-path="url(#clip1_87690_2009)">
+                    <path
+                      d="M28.3764 11.7743L10.6573 18.6425C9.94427 18.9624 9.7031 19.6029 10.485 19.9505L15.0307 21.4026L26.0216 14.5748C26.6217 14.1462 27.2361 14.2605 26.7074 14.732L17.2677 23.3232L16.9712 26.959C17.2458 27.5204 17.7487 27.523 18.0695 27.244L20.6811 24.76L25.154 28.1267C26.1929 28.7449 26.7581 28.346 26.9817 27.2129L29.9154 13.2492C30.22 11.8545 29.7006 11.24 28.3764 11.7743Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath
+                    id="bgblur_0_87690_2009_clip_path"
+                    transform="translate(60.3 60.3)"
+                  >
+                    <rect width="40" height="40" rx="20" />
+                  </clipPath>
+                  <clipPath id="clip1_87690_2009">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(10 10)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="twitter transition-all duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a href="https://x.com/">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <foreignObject x="-60.3" y="-60.3" width="160.6" height="160.6"
+                  ><div
+                    xmlns="http://www.w3.org/1999/xhtml"
+                    style="
+                      backdrop-filter: blur(30.15px);
+                      clip-path: url(#bgblur_0_87690_2012_clip_path);
+                      height: 100%;
+                      width: 100%;
+                    "
+                  ></div
+                ></foreignObject>
+                <g data-figma-bg-blur-radius="60.3">
+                  <rect width="40" height="40" rx="20" fill="#4766F9" />
+                  <rect width="40" height="40" rx="20" fill="#A68272" />
+                  <g clip-path="url(#clip1_87690_2012)">
+                    <path
+                      d="M25.7508 10.9609H28.8175L22.1175 18.6193L30 29.0384H23.8283L18.995 22.7184L13.4633 29.0384H10.395L17.5617 20.8468L10 10.9618H16.3283L20.6975 16.7384L25.7508 10.9609ZM24.675 27.2034H26.3742L15.405 12.7001H13.5817L24.675 27.2034Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath
+                    id="bgblur_0_87690_2012_clip_path"
+                    transform="translate(60.3 60.3)"
+                  >
+                    <rect width="40" height="40" rx="20" />
+                  </clipPath>
+                  <clipPath id="clip1_87690_2012">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(10 10)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bottom-content gap-[9px] max-w-[1140px] w-full mx-auto pt-[98px] flex flex-col xs:flex-row items-center px-4 justify-center xs:justify-between"
+      >
+        <h1
+          class="policy text-white font-normal text-base leading-150 opacity-70"
+        >
+          Privacy Policy | Conditions
+        </h1>
+        <h1
+          class="copyright text-white leading-150 text-base font-normal opacity-70"
+        >
+          ZenPeak | Copyright©<span id="year"></span>
+        </h1>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
