@@ -78,92 +78,76 @@ cards.forEach((card) => {
   });
 });
 
-// SLIDER CARDS
+// SLIDER CARDS (Swiper)
 
-const sliderTrack = document.querySelector(".cards");
-      const sliderItems = document.querySelectorAll(".cards > .card");
-      const sliderLeftBtn = document.querySelector("#left-button");
-      const sliderRightBtn = document.querySelector("#right-button");
+const sliderLeftBtn = document.querySelector("#left-button");
+const sliderRightBtn = document.querySelector("#right-button");
 
-      let sliderIndex = 0;
+const cardsSwiper = new Swiper(".cards-swiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 28,
+  enabled: true,
+  speed: 500,
 
-      function isSliderEnabled() {
-        return window.innerWidth < 1024;
+  rewind: true,
+
+  breakpoints: {
+    769: {
+      enabled: true,
+      slidesPerView: "auto",
+      centeredSlides: false,
+      spaceBetween: 28,
+    },
+    1230: {
+      enabled: false,
+      slidesPerView: "auto",
+      centeredSlides: false,
+      spaceBetween: 28,
+    },
+  },
+
+  on: {
+    breakpoint(swiper) {
+      if (!swiper.enabled) {
+        swiper.wrapperEl.style.transform = "translate3d(0,0,0)";
       }
+    },
+  },
+});
 
-      function showTemporaryOpacity(button) {
-        if (!button) return;
+function showTemporaryOpacity(button) {
+  if (!button) return;
 
-        button.classList.add("opacity-30");
+  button.classList.add("opacity-30");
 
-        setTimeout(() => {
-          button.classList.remove("opacity-30");
-        }, 300);
-      }
+  setTimeout(() => {
+    button.classList.remove("opacity-30");
+  }, 300);
+}
 
-      function updateSlider() {
-        if (!sliderTrack || !sliderItems.length) return;
+function moveRight() {
+  if (!cardsSwiper.enabled) return;
 
-        if (!isSliderEnabled()) {
-          sliderTrack.style.transform = "translateX(0)";
-          sliderIndex = 0;
-          return;
-        }
+  cardsSwiper.slideNext();
 
-        const cardWidth = sliderItems[0].getBoundingClientRect().width;
-        const cardGap = parseFloat(getComputedStyle(sliderTrack).gap) || 0;
+  showTemporaryOpacity(sliderRightBtn);
+  sliderLeftBtn?.classList.remove("opacity-30");
+}
 
-        const slideAmount = cardWidth + cardGap;
+function moveLeft() {
+  if (!cardsSwiper.enabled) return;
 
-        sliderTrack.style.transform = `translateX(-${
-          sliderIndex * slideAmount
-        }px)`;
-      }
+  cardsSwiper.slidePrev();
 
-      function moveRight() {
-        if (!isSliderEnabled() || !sliderItems.length) return;
+  showTemporaryOpacity(sliderLeftBtn);
+  sliderRightBtn?.classList.remove("opacity-30");
+}
 
-        sliderIndex++;
+window.moveRight = moveRight;
+window.moveLeft = moveLeft;
 
-        if (sliderIndex >= sliderItems.length) {
-          sliderIndex = 0;
-        }
-
-        updateSlider();
-
-        showTemporaryOpacity(sliderRightBtn);
-
-        if (sliderLeftBtn) {
-          sliderLeftBtn.classList.remove("opacity-30");
-        }
-      }
-
-      function moveLeft() {
-        if (!isSliderEnabled() || !sliderItems.length) return;
-
-        sliderIndex--;
-
-        if (sliderIndex < 0) {
-          sliderIndex = sliderItems.length - 1;
-        }
-
-        updateSlider();
-
-        showTemporaryOpacity(sliderLeftBtn);
-
-        if (sliderRightBtn) {
-          sliderRightBtn.classList.remove("opacity-30");
-        }
-      }
-
-      window.moveRight = moveRight;
-      window.moveLeft = moveLeft;
-
-      window.addEventListener("resize", updateSlider);
-
-      updateSlider();
-
-// ACCORDIONS
+// ACCORDION
 
 const accordions = document.querySelectorAll(".accordion");
 

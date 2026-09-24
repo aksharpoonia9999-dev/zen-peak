@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="icon" href="assets/images/fav.webp" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
@@ -42,8 +46,8 @@
         --color-dark-peach: rgba(166, 130, 114, 1);
         --color-light-peach: rgba(247, 243, 240, 1);
         --color-dark: rgba(90, 86, 86, 1);
-        --color-light-black: rgba(51, 51, 51, 1)
-          --color-dark-blue: rgba(12, 15, 38, 1);
+        --color-light-black: rgba(51, 51, 51, 1);
+        --color-dark-blue: rgba(12, 15, 38, 1);
         /* =========================
      Fonts
   ========================= */
@@ -91,6 +95,11 @@
         --breakpoint-sm: 374px;
       }
     </style>
+    <style>
+      .cards-swiper .swiper-slide {
+        width: min(100%, 362px);
+      }
+    </style>
   </head>
   <body class="font-ubuntu bg-light-peach">
     <section class="min-h-fit bg-peach relative">
@@ -99,13 +108,15 @@
           class="row w-full flex justify-center items-center flex-col pt-[57px] md:pt-[80px] lg:pt-[99px]"
         >
           <div class="logo max-w-[480px]">
-            <img
-              width="480"
-              height="99"
-              class="object-cover max-w-[240px] xs:max-w-[480px] w-full h-[44px] xs:h-auto"
-              src="assets/images/logo.webp"
-              alt="logo-with-text"
-            />
+            <a
+              href=""
+              ><img
+                width="480"
+                height="99"
+                class="object-cover max-w-[240px] xs:max-w-[480px] w-full h-[44px] xs:h-auto"
+                src="assets/images/logo.webp"
+                alt="logo-with-text"
+            /></a>
           </div>
           <h1
             class="heading italic text-4xl sm:text-[clamp(43px,5.21vw,75px)] text-white text-center leading-130 mt-[41px] xs:mt-[28px] font-light"
@@ -115,7 +126,7 @@
             Strategies
           </h1>
           <button
-            class="contact-btn group relative overflow-hidden max-w-[330px] xs:max-w-[201px] w-full border border-solid border-white rounded-127 py-[20px] xs:py-[25px] px-[50px] sm:mt-[40px] mt-[61px] cursor-pointer"
+            class="contact-btn group relative overflow-hidden max-w-[330px] xs:max-w-[201px] w-full border border-solid border-white rounded-127 py-[20px] xs:py-[23.5px] px-[50px] sm:mt-[40px] mt-[61px] cursor-pointer"
           >
             <span
               class="absolute left-0 top-1/2 h-[300px] w-[300px] -translate-x-full -translate-y-1/2 rounded-full bg-white transition-transform duration-700 ease-out group-hover:translate-x-0"
@@ -272,22 +283,20 @@
       <div class="container max-w-[1141.31px] w-full mx-auto">
         <div class="row w-full">
           <h1
-            class="heading max-w-[593px] leading-130 text-[clamp(36px,4.444vw,64px)] text-dark font-light capitalize italic"
+            class="heading text-center lg:text-left mb-[60px] lg:mb-0 leading-130 text-[clamp(36px,4.444vw,64px)] text-dark font-light capitalize italic"
           >
             meet
             <span class="font-bold not-italic leading-130">with our</span> team
           </h1>
-          <div class="overflow-hidden w-full">
-            <div
-              class="cards flex gap-7 transition-transform duration-500 ease-in-out"
-            >
+          <div class="cards-swiper swiper overflow-hidden w-full">
+            <div class="cards swiper-wrapper">
               <div
-                class="card max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative mt-[108px] max-lg:mt-0 overflow-hidden"
+                class="card swiper-slide max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative mt-[108px] max-lg:mt-0 overflow-hidden"
               >
                 <img
                   width="361"
                   height="485"
-                  class="object-cover"
+                  class="object-cover w-full h-auto"
                   src="assets/images/user-1.webp"
                   alt="card-img"
                 />
@@ -296,7 +305,6 @@
                   class="show-bio flex items-center absolute top-3 left-3 gap-[13px] z-50"
                 >
                   <button
-                    id="show-bio"
                     class="show-btn size-[68px] rounded-1 cursor-pointer bg-dark-peach flex items-center justify-center duration-300 ease-in-out transition-all"
                   >
                     <svg
@@ -360,12 +368,12 @@
                 </div>
               </div>
               <div
-                class="card max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative mt-11 max-lg:mt-0 overflow-hidden"
+                class="card swiper-slide max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative mt-11 max-lg:mt-0 overflow-hidden"
               >
                 <img
                   width="361"
                   height="485"
-                  class="object-cover"
+                  class="object-cover w-full h-auto"
                   src="assets/images/user-2.webp"
                   alt="card-img"
                 />
@@ -374,7 +382,6 @@
                   class="show-bio flex items-center absolute top-3 left-3 gap-[13px] z-50"
                 >
                   <button
-                    id="show-bio"
                     class="show-btn size-[68px] rounded-1 cursor-pointer bg-dark-peach flex items-center justify-center duration-300 ease-in-out transition-all"
                   >
                     <svg
@@ -437,12 +444,12 @@
                 </div>
               </div>
               <div
-                class="card max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative overflow-hidden"
+                class="card swiper-slide max-w-[362px] w-full shrink-0 max-[768px]:basis-full max-[768px]:max-w-full rounded-[4px] relative overflow-hidden"
               >
                 <img
                   width="361"
                   height="485"
-                  class="object-cover"
+                  class="object-cover w-full h-auto"
                   src="assets/images/user-3.webp"
                   alt="card-img"
                 />
@@ -450,7 +457,6 @@
                   class="show-bio flex items-center absolute top-3 left-3 gap-[13px] z-50"
                 >
                   <button
-                    id="show-bio"
                     class="show-btn size-[68px] rounded-1 cursor-pointer bg-dark-peach flex items-center justify-center duration-300 ease-in-out transition-all"
                   >
                     <svg
@@ -541,6 +547,7 @@
                 onclick="moveRight()"
               >
                 <svg
+                  class="cursor-pointer"
                   width="60"
                   height="15"
                   viewBox="0 0 60 15"
@@ -931,7 +938,7 @@
                   class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
                 >
                   <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
                   >
                     <img
                       width="43"
@@ -959,7 +966,7 @@
                   class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
                 >
                   <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
                   >
                     <img
                       width="55"
@@ -992,7 +999,7 @@
                   class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
                 >
                   <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
                   >
                     <img
                       width="52"
@@ -1020,13 +1027,13 @@
                   class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
                 >
                   <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center group-hover:shadow-card transition-all duration-300 ease-in-out"
+                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
                   >
                     <img
                       width="54"
                       height="54"
                       class="object-cover h-auto w-[clamp(49px,13.07vw,54px)]"
-                      src="assets/images/rocket.webp"
+                      src="assets/images/mic.webp"
                       alt="rocket"
                     />
                   </div>
@@ -1293,6 +1300,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
