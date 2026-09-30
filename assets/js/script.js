@@ -52,7 +52,7 @@ cards.forEach((card) => {
   showBtn.addEventListener("click", () => {
     const isOpen = bio.classList.contains("visible");
 
-    bio.classList.toggle("top-0");
+    bio.classList.toggle("top-[1px]");
     bio.classList.toggle("top-full");
 
     bio.classList.toggle("opacity-100");
@@ -97,11 +97,13 @@ const cardsSwiper = new Swiper(".cards-swiper", {
       enabled: true,
       slidesPerView: "auto",
       centeredSlides: false,
+      loop: true,
       spaceBetween: 28,
     },
     1230: {
       enabled: false,
       slidesPerView: "auto",
+      loop: true,
       centeredSlides: false,
       spaceBetween: 28,
     },
