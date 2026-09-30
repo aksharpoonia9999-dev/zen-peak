@@ -212,7 +212,9 @@
 
     <section class="min-h-fit pt-[74px] md:pt-16 overflow-hidden">
       <div class="logo-marquee max-w-[1827.5px] mx-auto w-full overflow-hidden">
-        <div class="scroll-logo flex gap-[clamp(24px,4.96vw,56.67px)] items-center w-max">
+        <div
+          class="scroll-logo flex gap-[clamp(24px,4.96vw,56.67px)] items-center w-max"
+        >
           <div
             class="img-card w-[215px] h-[60px] md:h-[85px] shrink-0 flex items-center justify-center"
           >
@@ -565,271 +567,286 @@
       </div>
     </section>
 
-    <section class="min-h-fit relative">
-      <div class="container max-w-[738px] mx-auto w-full px-4">
-        <div class="row w-full flex flex-col items-center justify-center">
-          <h1
-            class="heading capitalize text-[clamp(36px,4.44vw,64px)] font-bold text-dark leading-130 text-center"
+    <section
+      id="portfolio"
+      class="relative overflow-hidden px-[16px] pt-[80px] sm:pt-[112px] lg:pt-[185px] max-sm:pt-[0px]"
+    >
+      <img
+        class="absolute max-sm:hidden top-[28.5%]"
+        width="1440"
+        height="870"
+        src="/assets/images/faq_bg_img.png"
+        alt="faq_bg_img"
+      />
+      <img
+        class="absolute sm:hidden left-1/2 -translate-x-1/2 top-[6%]"
+        width="375"
+        height="627"
+        src="/assets/images/small_screen_last.png"
+        alt="faq_bg_img"
+      />
+      <div
+        class="relative z-10 mx-auto flex w-full max-w-[738px] flex-col items-center"
+      >
+        <!-- HEADING -->
+        <div class="mb-[44px] max-w-[738px] text-center max-sm:mb-[46px]">
+          <h2
+            data-aos="fade-up"
+            class="section-title font-bold tracking-[-1px] text-[#575354] text-[42px] leading-[130%] sm:text-[52px] lg:text-[64px] max-sm:text-[36px] max-sm:max-w-[327px] max-sm:leading-[130%] aos-init aos-animate"
           >
             Invest
-            <span class="italic font-light">cryptocurrency</span> Portfolio
-          </h1>
-          <div
-            class="accordions py-[21px] mt-11 flex pr-[27px] pl-[25px] flex-col gap-[21px] max-w-[636px] w-full rounded-17 border-[3px] border-solid border-dark-peach bg-peach"
+            <span class="font-light italic"> Cryptocurrency </span>
+            Portfolio
+          </h2>
+        </div>
+
+        <!-- faq -->
+        <div
+          class="flex flex-col items-center justify-center gap-[24px] max-w-[636px] px-[14px] w-full bg-bright-cream border-[3px] border-dark-peach rounded-[17px] py-[21px] max-sm:py-[11px] max-sm:pl-[14px] max-sm:pr-[13px] max-sm:max-w-[332px] max-sm:border-[1.57px] max-sm:gap-[12px] bg-[#DFBCA6]"
+        >
+          <!-- faq 1 -->
+          <details
+            open=""
+            class="faq-item group w-full max-w-[584px] bg-white overflow-hidden rounded-[120px] open:rounded-[16px] transition-all duration-[300ms]"
           >
-            <div
-              class="accordion active max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
+            <summary
+              class="list-none cursor-pointer grid grid-cols-[44px_1fr] group-open:grid-cols-[73px_1fr] max-sm:group-open:grid-cols-[38px_1fr] gap-[30px] items-center pt-[21px] pb-[22px] pl-[30px] group-open:items-start max-sm:grid-cols-[23px_1fr] max-sm:gap-[15px] max-sm:px-[13px] max-sm:py-[11px] group-open:pt-[26px] group-open:pb-[31px] max-sm:group-open:pt-[11px] max-sm:group-open:pb-[13px]"
             >
               <div
-                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
+                class="flex items-center justify-center transition-all duration-[300ms] w-fit group-open:size-[73px] max-sm:group-open:size-[38px] max-sm:rounded-[7px] group-open:[background:linear-gradient(180deg,#5E65D4_-9.38%,#5692E8_55.41%)] rounded-[14px] group-open:shadow-[0px_4px_31.4px_0px_#5793E9]"
               >
-                <div class="accordion-logo shrink-0">
-                  <div
-                    class="box size-[38px] xs:size-[73px] bg-blue-gradient rounded-14 flex items-center justify-center shadow-blue"
-                  >
-                    <img
-                      width="48"
-                      height="49"
-                      class="w-[25px] h-[25px] xs:w-[48px] xs:h-[49px]"
-                      src="assets/images/money-hat.webp"
-                      alt="money"
-                    />
-                  </div>
-                </div>
-
-                <h2
-                  class="accordion-heading text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+                <img
+                  src="/assets/images/money-hat.webp"
+                  alt="money"
+                  width="44"
+                  height="48"
+                  class="max-sm:max-w-[23px] group-open:rounded-[7px]"
+                />
+              </div>
+              <div class="min-w-0">
+                <span
+                  class="block text-[20px] group-open:text-[24px] font-bold text-dark-blue/80 group-open:text-dark-blue leading-[115%] max-sm:text-[16px] max-sm:group-open:text-[16px]"
                 >
                   Money Magicians
-                </h2>
-              </div>
-
-              <div
-                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
-              >
-                <div class="overflow-hidden">
-                  <p
-                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[70px] md:pl-[134px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                </span>
+                <div
+                  class="faq-content max-h-[0px] overflow-hidden transition-[max-height] duration-[500ms] ease-in-out"
+                  style="max-height: 92px"
+                >
+                  <div
+                    class="mt-[14px] max-sm:mt-[8px] text-dark-blue/70 text-[16px] max-sm:text-[8px] leading-[162%]"
                   >
                     Pulvinar scelerisque viverra at donec nunc orci ullam corper
                     penatibus crasigula praesent dictum fames suscipit nam.
                     Fermentum praesent vel adipiscing eget dictum. Risus id
                     tellus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
-            >
-              <div
-                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
-              >
-                <div class="accordion-logo shrink-0">
-                  <div class="box flex items-center justify-center">
-                    <img
-                      width="44"
-                      height="48"
-                      class="w-[23px] h-[25px] xs:w-[44px] xs:h-[48px]"
-                      src="assets/images/fortune.webp"
-                      alt="fortune"
-                    />
                   </div>
                 </div>
+              </div>
+            </summary>
+          </details>
 
-                <h2
-                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+          <!-- FAQ 2 -->
+          <details
+            class="faq-item group w-full max-w-[584px] bg-white overflow-hidden rounded-[120px] open:rounded-[16px] transition-all duration-[300ms]"
+          >
+            <summary
+              class="list-none cursor-pointer grid grid-cols-[44px_1fr] group-open:grid-cols-[73px_1fr] max-sm:group-open:grid-cols-[38px_1fr] gap-[30px] items-center pt-[21px] pb-[22px] pl-[30px] group-open:items-start max-sm:grid-cols-[23px_1fr] max-sm:gap-[15px] max-sm:px-[13px] max-sm:py-[11px] group-open:pt-[26px] group-open:pb-[31px] max-sm:group-open:pt-[11px] max-sm:group-open:pb-[13px]"
+            >
+              <div
+                class="flex items-center justify-center transition-all duration-[300ms] w-fit group-open:size-[73px] max-sm:group-open:size-[38px] max-sm:rounded-[7px] group-open:[background:linear-gradient(180deg,#5E65D4_-9.38%,#5692E8_55.41%)] rounded-[14px] group-open:shadow-[0px_4px_31.4px_0px_#5793E9]"
+              >
+                <img
+                  src="/assets/images/fortune.webp"
+                  alt="Fortune Finders"
+                  width="44"
+                  height="48"
+                  class="max-sm:max-w-[23px] group-open:rounded-[7px]"
+                />
+              </div>
+              <div class="min-w-0">
+                <span
+                  class="block text-[20px] group-open:text-[24px] font-bold text-dark-blue/80 group-open:text-dark-blue leading-[115%] max-sm:text-[16px] max-sm:group-open:text-[16px]"
                 >
                   Fortune Finders
-                </h2>
-              </div>
-
-              <div
-                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
-              >
-                <div class="overflow-hidden">
-                  <p
-                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[105px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                </span>
+                <div
+                  class="faq-content max-h-[0px] overflow-hidden transition-[max-height] duration-[500ms] ease-in-out"
+                >
+                  <div
+                    class="mt-[14px] max-sm:mt-[8px] text-dark-blue/70 text-[16px] max-sm:text-[8px] leading-[162%]"
                   >
                     Pulvinar scelerisque viverra at donec nunc orci ullam corper
                     penatibus crasigula praesent dictum fames suscipit nam.
                     Fermentum praesent vel adipiscing eget dictum. Risus id
                     tellus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
-            >
-              <div
-                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
-              >
-                <div class="accordion-logo shrink-0">
-                  <div class="box flex items-center justify-center">
-                    <img
-                      width="50"
-                      height="50"
-                      class="w-[26px] h-[26px] xs:w-[50px] xs:h-[50px]"
-                      src="assets/images/investment.webp"
-                      alt="investment"
-                    />
                   </div>
                 </div>
+              </div>
+            </summary>
+          </details>
 
-                <h2
-                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+          <!-- FAQ 3 -->
+          <details
+            class="faq-item group w-full max-w-[584px] bg-white overflow-hidden rounded-[120px] open:rounded-[16px] transition-all duration-[300ms]"
+          >
+            <summary
+              class="list-none cursor-pointer grid grid-cols-[44px_1fr] group-open:grid-cols-[73px_1fr] max-sm:group-open:grid-cols-[38px_1fr] gap-[30px] items-center pt-[21px] pb-[22px] pl-[30px] group-open:items-start max-sm:grid-cols-[23px_1fr] max-sm:gap-[15px] max-sm:px-[13px] max-sm:py-[11px] group-open:pt-[26px] group-open:pb-[31px] max-sm:group-open:pt-[11px] max-sm:group-open:pb-[13px]"
+            >
+              <div
+                class="flex items-center justify-center transition-all duration-[300ms] w-fit group-open:size-[73px] max-sm:group-open:size-[38px] max-sm:rounded-[7px] group-open:[background:linear-gradient(180deg,#5E65D4_-9.38%,#5692E8_55.41%)] rounded-[14px] group-open:shadow-[0px_4px_31.4px_0px_#5793E9]"
+              >
+                <img
+                  src="/assets/images/investment.webp"
+                  alt="investment"
+                  width="44"
+                  height="48"
+                  class="max-sm:max-w-[23px] group-open:rounded-[7px]"
+                />
+              </div>
+              <div class="min-w-0">
+                <span
+                  class="block text-[20px] group-open:text-[24px] font-bold text-dark-blue/80 group-open:text-dark-blue leading-[115%] max-sm:text-[16px] max-sm:group-open:text-[16px]"
                 >
                   Investment Innovators
-                </h2>
-              </div>
-
-              <div
-                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
-              >
-                <div class="overflow-hidden">
-                  <p
-                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[110px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                </span>
+                <div
+                  class="faq-content max-h-[0px] overflow-hidden transition-[max-height] duration-[500ms] ease-in-out"
+                >
+                  <div
+                    class="mt-[14px] max-sm:mt-[8px] text-dark-blue/70 text-[16px] max-sm:text-[8px] leading-[162%]"
                   >
                     Pulvinar scelerisque viverra at donec nunc orci ullam corper
                     penatibus crasigula praesent dictum fames suscipit nam.
                     Fermentum praesent vel adipiscing eget dictum. Risus id
                     tellus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
-            >
-              <div
-                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
-              >
-                <div class="accordion-logo shrink-0">
-                  <div class="box flex items-center justify-center">
-                    <img
-                      width="50"
-                      height="50"
-                      class="w-[26px] h-[26px] xs:w-[50px] xs:h-[50px]"
-                      src="assets/images/profit.webp"
-                      alt="profit"
-                    />
                   </div>
                 </div>
+              </div>
+            </summary>
+          </details>
 
-                <h2
-                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+          <!-- FAQ 4 -->
+          <details
+            class="faq-item group w-full max-w-[584px] bg-white overflow-hidden rounded-[120px] open:rounded-[16px] transition-all duration-[300ms]"
+          >
+            <summary
+              class="list-none cursor-pointer grid grid-cols-[44px_1fr] group-open:grid-cols-[73px_1fr] max-sm:group-open:grid-cols-[38px_1fr] gap-[30px] items-center pt-[21px] pb-[22px] pl-[30px] group-open:items-start max-sm:grid-cols-[23px_1fr] max-sm:gap-[15px] max-sm:px-[13px] max-sm:py-[11px] group-open:pt-[26px] group-open:pb-[31px] max-sm:group-open:pt-[11px] max-sm:group-open:pb-[13px]"
+            >
+              <div
+                class="flex items-center justify-center transition-all duration-[300ms] w-fit group-open:size-[73px] max-sm:group-open:size-[38px] max-sm:rounded-[7px] group-open:[background:linear-gradient(180deg,#5E65D4_-9.38%,#5692E8_55.41%)] rounded-[14px] group-open:shadow-[0px_4px_31.4px_0px_#5793E9]"
+              >
+                <img
+                  src="/assets/images/profit.webp"
+                  alt="profit"
+                  width="44"
+                  height="48"
+                  class="max-sm:max-w-[23px] group-open:rounded-[7px]"
+                />
+              </div>
+              <div class="min-w-0">
+                <span
+                  class="block text-[20px] group-open:text-[24px] font-bold text-dark-blue/80 group-open:text-dark-blue leading-[115%] max-sm:text-[16px] max-sm:group-open:text-[16px]"
                 >
                   Profit Prophets
-                </h2>
-              </div>
-
-              <div
-                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
-              >
-                <div class="overflow-hidden">
-                  <p
-                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[110px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                </span>
+                <div
+                  class="faq-content max-h-[0px] overflow-hidden transition-[max-height] duration-[500ms] ease-in-out"
+                >
+                  <div
+                    class="mt-[14px] max-sm:mt-[8px] text-dark-blue/70 text-[16px] max-sm:text-[8px] leading-[162%]"
                   >
                     Pulvinar scelerisque viverra at donec nunc orci ullam corper
                     penatibus crasigula praesent dictum fames suscipit nam.
                     Fermentum praesent vel adipiscing eget dictum. Risus id
                     tellus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
-            >
-              <div
-                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
-              >
-                <div class="accordion-logo shrink-0">
-                  <div class="box flex items-center justify-center">
-                    <img
-                      width="50"
-                      height="50"
-                      class="w-[26px] h-[26px] xs:w-[50px] xs:h-[50px]"
-                      src="assets/images/risk.webp"
-                      alt="risk"
-                    />
                   </div>
                 </div>
+              </div>
+            </summary>
+          </details>
 
-                <h2
-                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+          <!-- FAQ 5 -->
+          <details
+            class="faq-item group w-full max-w-[584px] bg-white overflow-hidden rounded-[120px] open:rounded-[16px] transition-all duration-[300ms]"
+          >
+            <summary
+              class="list-none cursor-pointer grid grid-cols-[44px_1fr] group-open:grid-cols-[73px_1fr] max-sm:group-open:grid-cols-[38px_1fr] gap-[30px] items-center pt-[21px] pb-[22px] pl-[30px] group-open:items-start max-sm:grid-cols-[23px_1fr] max-sm:gap-[15px] max-sm:px-[13px] max-sm:py-[11px] group-open:pt-[26px] group-open:pb-[31px] max-sm:group-open:pt-[11px] max-sm:group-open:pb-[13px]"
+            >
+              <div
+                class="flex items-center justify-center transition-all duration-[300ms] w-fit group-open:size-[73px] max-sm:group-open:size-[38px] max-sm:rounded-[7px] group-open:[background:linear-gradient(180deg,#5E65D4_-9.38%,#5692E8_55.41%)] rounded-[14px] group-open:shadow-[0px_4px_31.4px_0px_#5793E9]"
+              >
+                <img
+                  src="/assets/images/risk.webp"
+                  alt="risk"
+                  width="44"
+                  height="48"
+                  class="max-sm:max-w-[23px] group-open:rounded-[7px]"
+                />
+              </div>
+              <div class="min-w-0">
+                <span
+                  class="block text-[20px] group-open:text-[24px] font-bold text-dark-blue/80 group-open:text-dark-blue leading-[115%] max-sm:text-[16px] max-sm:group-open:text-[16px]"
                 >
                   Risk Reapers
-                </h2>
-              </div>
-
-              <div
-                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
-              >
-                <div class="overflow-hidden">
-                  <p
-                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[110px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                </span>
+                <div
+                  class="faq-content max-h-[0px] overflow-hidden transition-[max-height] duration-[500ms] ease-in-out"
+                >
+                  <div
+                    class="mt-[14px] max-sm:mt-[8px] text-dark-blue/70 text-[16px] max-sm:text-[8px] leading-[162%]"
                   >
                     Pulvinar scelerisque viverra at donec nunc orci ullam corper
                     penatibus crasigula praesent dictum fames suscipit nam.
                     Fermentum praesent vel adipiscing eget dictum. Risus id
                     tellus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="accordion max-w-[586px] w-full border border-solid border-transparent bg-white rounded-16 overflow-hidden"
-            >
-              <div
-                class="accordion-header flex items-center gap-[clamp(18px,4.67vw,35px)] pt-[clamp(13px,3.47vw,26px)] pr-[clamp(17px,4.53vw,33px)] pl-[clamp(13px,3.47vw,26px)] pb-[22px] cursor-pointer transition-[padding] duration-500 ease-in-out"
-              >
-                <div class="accordion-logo shrink-0">
-                  <div class="box flex items-center justify-center">
-                    <img
-                      width="57"
-                      height="50"
-                      class="w-[30px] h-[26px] xs:w-[57px] xs:h-[50px]"
-                      src="assets/images/kesolute.webp"
-                      alt="kesolute"
-                    />
                   </div>
                 </div>
+              </div>
+            </summary>
+          </details>
 
-                <h2
-                  class="accordion-heading opacity-80 text-[clamp(16px,4.27vw,24px)] leading-100 font-bold text-dark-blue"
+          <!-- FAQ 6 -->
+          <details
+            class="faq-item group w-full max-w-[584px] bg-white overflow-hidden rounded-[120px] open:rounded-[16px] transition-all duration-[300ms]"
+          >
+            <summary
+              class="list-none cursor-pointer grid grid-cols-[44px_1fr] group-open:grid-cols-[73px_1fr] max-sm:group-open:grid-cols-[38px_1fr] gap-[30px] items-center pt-[21px] pb-[22px] pl-[30px] group-open:items-start max-sm:grid-cols-[23px_1fr] max-sm:gap-[15px] max-sm:px-[13px] group-open:pt-[26px] group-open:pb-[31px] max-sm:group-open:pt-[11px] max-sm:group-open:pb-[13px] max-sm:py-[14px]"
+            >
+              <div
+                class="flex items-center justify-center transition-all duration-[300ms] w-fit group-open:size-[73px] max-sm:group-open:size-[38px] max-sm:rounded-[7px] group-open:[background:linear-gradient(180deg,#5E65D4_-9.38%,#5692E8_55.41%)] rounded-[14px] group-open:shadow-[0px_4px_31.4px_0px_#5793E9]"
+              >
+                <img
+                  src="/assets/images/kesolute.webp"
+                  alt="kesolute"
+                  width="44"
+                  height="48"
+                  class="max-sm:max-w-[23px] group-open:rounded-[7px]"
+                />
+              </div>
+              <div class="min-w-0">
+                <span
+                  class="block text-[20px] group-open:text-[24px] font-bold text-dark-blue/80 group-open:text-dark-blue leading-[115%] max-sm:text-[16px] max-sm:group-open:text-[16px]"
                 >
                   Kesolute Investment Managers
-                </h2>
-              </div>
-
-              <div
-                class="accordion-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out"
-              >
-                <div class="overflow-hidden">
-                  <p
-                    class="text-[clamp(8.37px,2.23vw,16px)] opacity-70 leading-150 text-dark-blue font-normal pl-[56px] md:pl-[120px] pr-[clamp(17px,4.53vw,33px)] pb-[clamp(11px,4vw,31px)]"
+                </span>
+                <div
+                  class="faq-content max-h-[0px] overflow-hidden transition-[max-height] duration-[500ms] ease-in-out"
+                >
+                  <div
+                    class="mt-[14px] max-sm:mt-[8px] text-dark-blue/70 text-[16px] max-sm:text-[8px] leading-[162%]"
                   >
                     Pulvinar scelerisque viverra at donec nunc orci ullam corper
                     penatibus crasigula praesent dictum fames suscipit nam.
                     Fermentum praesent vel adipiscing eget dictum. Risus id
                     tellus.
-                  </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </summary>
+          </details>
         </div>
       </div>
-      <div
-        class="bg-img absolute bg-[url(assets/images/art-2.webp)] bg-cover bg-center bg-no-repeat max-w-[1507px] w-full h-[clamp(600px,100vw,800px)] -z-10 bottom-0"
-      ></div>
     </section>
 
     <section class="min-h-fit xs:px-4 lg:px-0">
@@ -908,156 +925,144 @@
       </div>
     </section>
 
-    <section class="min-h-fit relative">
-      <div class="container max-w-[880px] w-full mx-auto px-4 sm:px-[20px]">
+    <section>
+      <div class="py-[158px] max-sm:py-[96px]">
         <div
-          class="row w-full pt-[60px] xs:pt-[97px] lg:pt-[139px] flex flex-col items-center"
+          class="max-w-[735px] mx-auto text-center pb-[81px] max-sm:pb-[0px]"
         >
           <h1
-            class="heading max-w-[735px] text-center capitalize text-[clamp(36px,4.44vw,64px)] text-dark font-light leading-130 italic"
+            class="font-light italic text-[64px] max-sm:text-[36px] max-sm:max-w-[334px] max-sm:mx-auto max-sm:leading-[119%] leading-[130%] text-dark pb-[15px] max-sm:pb-[13px]"
           >
-            Let’s together
-            <span class="not-italic font-bold">make the crypto world</span>
-            great!
+            Let's Together
+            <span class="font-bold not-italic">Make The Crypto World</span>
+            Great!
           </h1>
           <p
-            class="para text-center max-w-[675px] w-full capitalize mt-[15px] text-light-black opacity-70 font-normal leading-150 text-base"
+            class="max-w-[675px] font-normal text-[16px] leading-[150%] text-[#6E6D6C] max-sm:max-w-[333px] max-sm:mx-auto"
           >
-            Pretium id amet at iaculis sit orci enim. Fames in eget neque vitae
-            iaculis diam. Malesuada adipiscing integer tempor natoque accumsan
-            et.
+            Pretium id Amet At iaculis Sit Orci Enim. Fames In Eget Neque Vitae
+            Iaculis Diam. Malesuada Adipiscing Integer Tempor Natoque Accumsan
+            Et.
           </p>
-
-          <div
-            class="info-part mt-[70px] md:mt-[93px] max-w-[838px] lg:w-full border-[3px] border-solid rounded-17 border-transparent lg:border-dark-peach lg:bg-white lg:py-[38px] lg:px-[42px]"
-          >
-            <div class="cards-bottom flex flex-col gap-x-[25px] gap-y-[35px]">
-              <div class="top-cards flex flex-col lg:flex-row gap-[25px]">
+        </div>
+        <div
+          class="sm:bg-[url('/assets/images/last_bg.png')] bg-[url('/assets/images/teer.png')] bg-position-[center_45px] sm:bg-cover bg-contain bg-no-repeat max-sm:pt-[70px]"
+        >
+          <div class="px-[20px] pt-[12px]">
+            <div
+              class="max-w-[838px] max-sm:max-w-[365px] bg-white mx-auto border-[3px] border-dark-peach max-sm:border-none max-sm:bg-transparent rounded-[16px] py-[34px] px-[41px] max-sm:p-[0px] max-sm:mx-auto grid grid-cols-2 gap-x-[25px] gap-y-[35px] max-sm:gap-y-[27px] max-md:grid-cols-1 max-md:mx-auto max-md:max-w-[460px]"
+            >
+              <div
+                class="border bg-white border-[#000000] rounded-[16px] max-w-[365px] py-[20px] pl-[23px] flex gap-[23px] max-sm:py-[18.25px] max-sm:pl-[21px] max-sm:h-[103px]"
+              >
                 <div
-                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
+                  class="bg-dark-peach w-[73px] shadow-[0px_4px_31.4px_0px_#DAAF95] duration-[300ms] h-[73px] max-sm:w-[66px] max-sm:h-[66px] rounded-[16px] pt-[9px] pr-[5px] pb-[8px] pl-[12px]"
                 >
-                  <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
-                  >
-                    <img
-                      width="43"
-                      height="52"
-                      class="object-cover h-auto w-[clamp(39px,10.13vw,43px)]"
-                      src="assets/images/paper.webp"
-                      alt="paper"
-                    />
-                  </div>
-                  <div class="right">
-                    <h1
-                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
-                    >
-                      General inquiries
-                    </h1>
-                    <a
-                      href="mailto:General@gmail.com"
-                      class="mail opacity-70 font-normal text-base leading-150"
-                    >
-                      General@gmail.com
-                    </a>
-                  </div>
+                  <img
+                    width="56"
+                    height="56"
+                    src="assets/images/investigation.svg"
+                    alt="investigation"
+                  />
                 </div>
-                <div
-                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
-                >
-                  <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
+                <div class="pt-[3px] pb-[9px]">
+                  <h2
+                    class="text-blue font-bold text-[24px] leading-[100%] pb-[9px] max-sm:text-[20px]"
                   >
-                    <img
-                      width="55"
-                      height="55"
-                      class="object-cover h-auto w-[clamp(46px,12.27vw,55px)]"
-                      src="assets/images/business.webp"
-                      alt="business"
-                    />
-                  </div>
-                  <div class="right">
-                    <h1
-                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
-                    >
-                      Investor relations
-                    </h1>
-                    <a
-                      href="mailto:invetorrelationsgmail.com"
-                      class="mail opacity-70 font-normal text-base leading-150"
-                    >
-                      Invetorrelationsgmail.Com
-                    </a>
-                  </div>
+                    General inquiries
+                  </h2>
+                  <p
+                    class="text-[#707070] font-normal text-[16px] leading-[150%]"
+                  >
+                    general@gmail.com
+                  </p>
                 </div>
               </div>
 
               <div
-                class="bottom-cards-two flex flex-col lg:flex-row gap-[25px]"
+                class="border bg-white border-[#000000] rounded-[16px] max-w-[365px] py-[20px] pl-[23px] flex gap-[23px] max-sm:py-[18.25px] max-sm:pl-[21px] max-sm:h-[103px]"
               >
                 <div
-                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
+                  class="bg-dark-peach w-[73px] shadow-[0px_4px_31.4px_0px_#DAAF95] duration-[300ms] h-[73px] max-sm:w-[66px] max-sm:h-[66px] rounded-[16px] p-[9px]"
                 >
-                  <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
-                  >
-                    <img
-                      width="52"
-                      height="52"
-                      class="object-cover h-auto w-[clamp(47px,12.53vw,52px)]"
-                      src="assets/images/rocket.webp"
-                      alt="rocket"
-                    />
-                  </div>
-                  <div class="right">
-                    <h1
-                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
-                    >
-                      Startup founders
-                    </h1>
-                    <a
-                      href="mailto:Startup@gmail.com"
-                      class="mail opacity-70 font-normal text-base leading-150"
-                    >
-                      Startup@gmail.com
-                    </a>
-                  </div>
+                  <img
+                    width="55"
+                    height="55"
+                    src="assets/images/business.svg"
+                    alt="business"
+                  />
                 </div>
-                <div
-                  class="card-bottom cursor-pointer max-w-[365px] w-full border border-solid border-black group rounded-16 py-[clamp(18px,4.8vw,20px)] pl-[clamp(20px,5.33vw,23px)] pr-3 bg-white flex gap-[clamp(14px,3.73vw,23px)] items-center"
-                >
-                  <div
-                    class="left w-[clamp(66px,17.6vw,73px)] h-[clamp(66px,17.6vw,73px)] bg-dark-peach rounded-14 flex items-center justify-center shadow-card"
+                <div class="pt-[3px] pb-[9px]">
+                  <h2
+                    class="text-blue font-bold text-[24px] leading-[100%] pb-[9px] max-sm:text-[20px]"
                   >
-                    <img
-                      width="54"
-                      height="54"
-                      class="object-cover h-auto w-[clamp(49px,13.07vw,54px)]"
-                      src="assets/images/mic.webp"
-                      alt="rocket"
-                    />
-                  </div>
-                  <div class="right">
-                    <h1
-                      class="heading mb-[10px] xs:mb-[9px] text-[clamp(20px,5.33vw,24px)] leading-100 font-bold"
-                    >
-                      Media and press
-                    </h1>
-                    <a
-                      href="mailto:Mediai@gmail.com"
-                      class="mail opacity-70 font-normal text-base leading-150"
-                    >
-                      Mediai@gmail.com
-                    </a>
-                  </div>
+                    Investor relations
+                  </h2>
+                  <p
+                    class="text-[#707070] font-normal text-[16px] leading-[150%]"
+                  >
+                    invetorrelationsgmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="border bg-white border-[#000000] rounded-[16px] max-w-[365px] py-[20px] pl-[23px] flex gap-[23px] max-sm:py-[18.25px] max-sm:pl-[21px] max-sm:h-[103px]"
+              >
+                <div
+                  class="bg-dark-peach w-[73px] shadow-[0px_4px_31.4px_0px_#DAAF95] duration-[300ms] h-[73px] max-sm:w-[66px] max-sm:h-[66px] rounded-[16px] pt-[11px] pr-[11px] pb-[10px] pl-[10px]"
+                >
+                  <img
+                    width="52"
+                    height="52"
+                    src="assets/images/people.svg"
+                    alt="people"
+                  />
+                </div>
+                <div class="pt-[3px] pb-[9px]">
+                  <h2
+                    class="text-blue font-bold text-[24px] leading-[100%] pb-[9px] max-sm:text-[20px]"
+                  >
+                    Startup founders
+                  </h2>
+                  <p
+                    class="text-[#707070] font-normal text-[16px] leading-[150%]"
+                  >
+                    Startup@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="border bg-white border-[#000000] rounded-[16px] max-w-[365px] py-[20px] pl-[23px] flex gap-[23px] max-sm:py-[18.25px] max-sm:pl-[21px] max-sm:h-[103px]"
+              >
+                <div
+                  class="bg-dark-peach w-[73px] shadow-[0px_4px_31.4px_0px_#DAAF95] duration-[300ms] h-[73px] max-sm:w-[66px] max-sm:h-[66px] rounded-[16px] pt-[10px] pr-[10px] pb-[9px] pl-[9px]"
+                >
+                  <img
+                    width="54"
+                    height="54"
+                    src="assets/images/business-2.svg"
+                    alt="business"
+                  />
+                </div>
+                <div class="pt-[3px] pb-[9px]">
+                  <h2
+                    class="text-blue font-bold text-[24px] leading-[100%] pb-[9px] max-sm:text-[20px]"
+                  >
+                    Media and press
+                  </h2>
+                  <p
+                    class="text-[#707070] font-normal text-[16px] leading-[150%]"
+                  >
+                    Mediai@gmail.com
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="bg-img absolute bg-[url(assets/images/art.webp)] bg-cover lg:bg-contain bg-center bg-no-repeat max-w-[1507px] w-full h-[500px] -z-10 bottom-0"
-      ></div>
     </section>
 
     <footer
@@ -1286,7 +1291,8 @@
       <div
         class="bottom-content gap-[9px] max-w-[1140px] w-full mx-auto pt-[120px] sm:pt-[98px] flex flex-col xs:flex-row items-center px-4 justify-center xs:justify-between"
       >
-        <a href=""
+        <a
+          href=""
           class="policy text-white font-normal text-base leading-150 opacity-70 relative inline-block after:absolute after:left-0 after:-bottom-[1px] after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
         >
           Privacy Policy | Conditions

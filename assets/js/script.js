@@ -151,61 +151,55 @@ window.moveLeft = moveLeft;
 
 // ACCORDION
 
-const accordions = document.querySelectorAll(".accordion");
+       const faqItems = document.querySelectorAll(".faq-item");
 
-accordions.forEach((accordion) => {
-  const header = accordion.querySelector(".accordion-header");
-  const content = accordion.querySelector(".accordion-content");
+        faqItems.forEach((faq) => {
+            const summary = faq.querySelector("summary");
+            const content = faq.querySelector(".faq-content");
 
-  if (accordion.classList.contains("active")) {
-    header.classList.remove("pb-[22px]");
+            summary.addEventListener("click", (e) => {
+                e.preventDefault();
 
-    content.classList.remove("grid-rows-[0fr]");
-    content.classList.add("grid-rows-[1fr]");
+                if (faq.open) {
 
-    accordion.classList.remove("rounded-full", "border-transparent");
-    accordion.classList.add("rounded-16", "border-dark-peach");
-  } else {
-    header.classList.add("pb-[22px]");
+                    content.style.maxHeight = content.scrollHeight + "px";
 
-    content.classList.remove("grid-rows-[1fr]");
-    content.classList.add("grid-rows-[0fr]");
 
-    accordion.classList.remove("rounded-16", "border-dark-peach");
-    accordion.classList.add("rounded-full", "border-transparent");
-  }
+                    content.offsetHeight;
 
-  header.addEventListener("click", () => {
-    const isActive = accordion.classList.contains("active");
 
-    accordions.forEach((item) => {
-      item.classList.remove("active", "rounded-16", "border-dark-peach");
+                    requestAnimationFrame(() => {
+                        content.style.maxHeight = "0px";
+                    });
 
-      item.classList.add("rounded-full", "border-transparent");
+                    content.addEventListener(
+                        "transitionend",
+                        () => {
+                            faq.open = false;
+                        },
+                        { once: true }
+                    );
 
-      const itemHeader = item.querySelector(".accordion-header");
-      const itemContent = item.querySelector(".accordion-content");
+                }
 
-      itemHeader.classList.add("pb-[22px]");
+                else {
+                    faq.open = true;
+                    content.style.maxHeight = "0px";
+                    requestAnimationFrame(() => {
+                        content.style.maxHeight =
+                            content.scrollHeight + "px";
+                    });
+                }
+            });
+        });
 
-      itemContent.classList.remove("grid-rows-[1fr]");
-      itemContent.classList.add("grid-rows-[0fr]");
-    });
+        faqItems.forEach((faq) => {
+            const content = faq.querySelector(".faq-content");
 
-    if (!isActive) {
-      accordion.classList.add("active");
-
-      accordion.classList.remove("rounded-full", "border-transparent");
-
-      accordion.classList.add("rounded-16", "border-dark-peach");
-
-      header.classList.remove("pb-[22px]");
-
-      content.classList.remove("grid-rows-[0fr]");
-      content.classList.add("grid-rows-[1fr]");
-    }
-  });
-});
+            if (faq.open) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
 
 // YEAR FUNCTION
 
